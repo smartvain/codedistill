@@ -1,0 +1,37 @@
+{
+  "name": "codedistill",
+  "version": "0.1.0",
+  "description": "Distill generic patterns from work code and push to your personal GitHub",
+  "bin": {
+    "cdst": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "esbuild src/cli.ts --bundle --platform=node --target=node20 --outfile=dist/cli.js --banner:js='#!/usr/bin/env node'",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsx src/cli.ts"
+  },
+  "keywords": [
+    "cli",
+    "github",
+    "code-generalization",
+    "ai"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^21.0.0",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.6"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.10",
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.24.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

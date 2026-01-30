@@ -1,5 +1,7 @@
 # codedistill (cdst)
 
+[日本語](./README.ja.md)
+
 Distill generic patterns from work code and push to your personal GitHub.
 
 Work code contains company-specific naming, business logic, and credentials — but the underlying programming patterns are yours. `cdst` uses Claude Code to generalize your code and push it to a personal repository with one command.
